@@ -1,6 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: `Pandas Eating Lots`,
+    title: "My Blog",
+    author: "Noah",
+    description: "A collection of my thoughts and writings.",
+    siteUrl: "https://Noah.blog/",
+    social: [
+      {
+        name: "instagram",
+        url: "https://www.instagram.com/happyhong_2/",
+      },
+      {
+        name: "github",
+        url: "https://github.com/noah0316",
+      },
+    ],
   },
   plugins: [
     {
@@ -17,6 +30,10 @@ module.exports = {
       options: {
         pathToConfigModule: `src/utils/typography`,
       },
+    },
+    {
+      resolve: "gatsby-theme-blog",
+      options: {},
     },
   ],
 }
